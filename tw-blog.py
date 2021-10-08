@@ -6,12 +6,12 @@ import sys
 import time
 
 # 検索するアカウントのIDと期間、2つのファイル名を入力
-acount = "Rocomoting"   #ex) @search_id
-start = "2021-08-12"  #ex) 2020-08-15
-end = "2021-08-13"    #ec) 2021-08-22 04:15:22
+acount = "Rocomoting"   # ex) @search_id
+start = "2021-08-12"    # ex) 2021-08-15
+end = "2021-08-13"      # ex) 2021-08-22 04:15:22
 
-csvfile = "tmppp.csv"
-htmlfile = "tw-links.txt"
+csvfile = "tmp.csv"         # TWINTで取得したcsvデータを直接保存する
+htmlfile = "tw-links.txt"   # 検索期間内のurlデータをいい感じに装飾して古い順に収める
 
 # TWINTに必要な情報を読み込ませる
 c = twint.Config()
